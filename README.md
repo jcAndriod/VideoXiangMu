@@ -4,3 +4,6 @@
 
 
 用到了MVP+Retrofit+RxJava实现了首页的功能以及点击Banner跳转的影片播放页。
+
+
+目前就写这么多
