@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015378"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发现"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </FrameLayout>
+
+    <com.stone.card.library.CardSlidePanel
+        android:id="@+id/image_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl"
+        card:bottomMarginTop="38dp"
+        card:itemMarginTop="10dp"
+        card:yOffsetStep="13dp" />
+
+    <Button
+        android:id="@+id/notify_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="#2196F3"
+        android:text="换一批"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

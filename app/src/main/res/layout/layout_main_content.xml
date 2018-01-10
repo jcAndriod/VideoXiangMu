@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jc.com.videoxiangmu.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_rg">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/home_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bottom_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/tab_rb_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_02"
+            android:text="精选" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_03"
+            android:text="专题" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_01"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_04"
+            android:text="我的" />
+    </RadioGroup>
+
+</RelativeLayout>
